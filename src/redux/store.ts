@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import movieReducer from "./slices/movieSlices";
+import gptReducer from "./slices/gptSlice";
 
 export const store = configureStore({
     reducer: {
-        movies: movieReducer
+        movies: movieReducer,
+        gpt: gptReducer
     },
 })
 
